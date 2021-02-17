@@ -1,0 +1,12 @@
+<h1>Books#new</h1>
+<p><%= link_to("Home Page", books_path) %></p>
+
+<%= form_for(@book) do |f| %>
+    Title: <%= f.text_field(:title) %> <br>
+    Author: <%= f.text_field(:author) %> <br>
+    Price: <%= f.text_field(:price) %> <br>
+    Genre: <%= f.select :genre, [["Horror"], ["Fantasy"], ["Action"]]%> <br>
+    Published date: <%= f.select :published_date, [["2018"], ["2019"], ["2020"]]%> <br>
+    <%= f.submit "Submit Book" %>
+<% end %>
+

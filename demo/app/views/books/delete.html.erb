@@ -1,0 +1,8 @@
+<h1>Books#delete</h1>
+<p><%= link_to("Home Page", books_path) %></p>
+
+<%= form_for(@book, :method => 'delete') do |f| %>
+    <p> You really want to delete this? </p>
+    <%= f.submit "Delete Book" %>
+<% end %>
+
