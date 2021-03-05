@@ -13,10 +13,10 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(params.require(:book).permit(:title, :author, :price, :genre, :published_date))
-    if !@book.save
-      render('new')
+    if @book.save
+      redirect_to(books_path, notice: 'Book created successfully.')
     else
-      redirect_to(books_path)
+      redirect_to(new_book_path, notice: 'Book not created successfully.')
     end
   end
 
@@ -26,10 +26,10 @@ class BooksController < ApplicationController
 
   def update
     @book = Book.find(params[:id])
-    if !@book.update(params.require(:book).permit(:title, :author, :price, :genre, :published_date))
-      render('edit')
+    if @book.update(params.require(:book).permit(:title, :author, :price, :genre, :published_date))
+      redirect_to(book_path(@book.id), notice: 'Book edited successfully.')
     else
-      redirect_to(book_path(@book))
+      redirect_to(edit_book_path(@book.id), notice: 'Book not edited successfully.')
     end
   end
 
@@ -39,10 +39,10 @@ class BooksController < ApplicationController
 
   def destroy
     @book = Book.find(params[:id])
-    if !@book.destroy
-      render('delete')
+    if @book.destroy
+      redirect_to(books_path, notice: 'Book deleted successfully.')
     else
-      redirect_to(books_path)
+      redirect_to(delete_book_path(@book.id), notice: 'Book not deleted successfully.')
     end
   end
 end

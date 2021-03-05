@@ -1,0 +1,32 @@
+2021-03-04 22:39:07 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
+
+Creating a book
+.  valid inputs
+.  no title given
+
+Deleting a book
+.  deleting a book
+
+Double test
+.  Checks that two books should be able to be equalled by price
+
+Editing a book
+.  valid inputs
+.  no title given
+
+Book
+.  is valid with valid attributes
+.  is not valid without a title
+.  is not valid without a author
+.  is not valid without a genre
+.  is not valid without a price
+.  is not valid without a published_date
+
+
+Finished in 1.36 seconds (files took 7.03 seconds to load)
+12 examples, 0 failures
+
+Finished in 1.36 seconds (files took 7.03 seconds to load)
+12 examples, 0 failures
+
+
