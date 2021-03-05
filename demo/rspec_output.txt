@@ -1,4 +1,4 @@
-2021-03-04 22:39:07 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
+2021-03-04 22:41:55 WARN Selenium [DEPRECATION] Selenium::WebDriver::Chrome#driver_path= is deprecated. Use Selenium::WebDriver::Chrome::Service#driver_path= instead.
 
 Creating a book
 .  valid inputs
@@ -23,10 +23,10 @@ Book
 .  is not valid without a published_date
 
 
-Finished in 1.36 seconds (files took 7.03 seconds to load)
+Finished in 1.36 seconds (files took 6.87 seconds to load)
 12 examples, 0 failures
 
-Finished in 1.36 seconds (files took 7.03 seconds to load)
+Finished in 1.36 seconds (files took 6.87 seconds to load)
 12 examples, 0 failures
 
 
